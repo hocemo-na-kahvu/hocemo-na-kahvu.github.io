@@ -40,7 +40,6 @@ body {
 }
 
 body {
-
   color: white;
 
   background:
@@ -59,124 +58,40 @@ body {
 ============================== */
 
 .stars {
-
   position: fixed;
-
   inset: 0;
-
   pointer-events: none;
-
   overflow: hidden;
-
   z-index: 0;
 }
 
 .star {
-
   position: absolute;
-
   width: 3px;
   height: 3px;
-
   background: white;
-
   border-radius: 50%;
-
   opacity: .45;
 
   animation:
     twinkle 2.8s infinite ease-in-out;
 }
 
-.star:nth-child(1) {
-  left: 8%;
-  top: 15%;
-  animation-delay: .2s;
-}
-
-.star:nth-child(2) {
-  left: 18%;
-  top: 32%;
-  animation-delay: 1s;
-}
-
-.star:nth-child(3) {
-  left: 27%;
-  top: 12%;
-  animation-delay: 1.5s;
-}
-
-.star:nth-child(4) {
-  left: 38%;
-  top: 23%;
-  animation-delay: .7s;
-}
-
-.star:nth-child(5) {
-  left: 52%;
-  top: 11%;
-  animation-delay: 1.9s;
-}
-
-.star:nth-child(6) {
-  left: 63%;
-  top: 31%;
-  animation-delay: .4s;
-}
-
-.star:nth-child(7) {
-  left: 76%;
-  top: 16%;
-  animation-delay: 1.2s;
-}
-
-.star:nth-child(8) {
-  left: 88%;
-  top: 27%;
-  animation-delay: .9s;
-}
-
-.star:nth-child(9) {
-  left: 13%;
-  top: 55%;
-  animation-delay: 1.7s;
-}
-
-.star:nth-child(10) {
-  left: 25%;
-  top: 67%;
-  animation-delay: .3s;
-}
-
-.star:nth-child(11) {
-  left: 73%;
-  top: 62%;
-  animation-delay: 1.4s;
-}
-
-.star:nth-child(12) {
-  left: 90%;
-  top: 72%;
-  animation-delay: .8s;
-}
-
-.star:nth-child(13) {
-  left: 45%;
-  top: 76%;
-  animation-delay: 2s;
-}
-
-.star:nth-child(14) {
-  left: 57%;
-  top: 58%;
-  animation-delay: .6s;
-}
-
-.star:nth-child(15) {
-  left: 6%;
-  top: 82%;
-  animation-delay: 1.1s;
-}
+.star:nth-child(1) { left: 8%; top: 15%; animation-delay: .2s; }
+.star:nth-child(2) { left: 18%; top: 32%; animation-delay: 1s; }
+.star:nth-child(3) { left: 27%; top: 12%; animation-delay: 1.5s; }
+.star:nth-child(4) { left: 38%; top: 23%; animation-delay: .7s; }
+.star:nth-child(5) { left: 52%; top: 11%; animation-delay: 1.9s; }
+.star:nth-child(6) { left: 63%; top: 31%; animation-delay: .4s; }
+.star:nth-child(7) { left: 76%; top: 16%; animation-delay: 1.2s; }
+.star:nth-child(8) { left: 88%; top: 27%; animation-delay: .9s; }
+.star:nth-child(9) { left: 13%; top: 55%; animation-delay: 1.7s; }
+.star:nth-child(10) { left: 25%; top: 67%; animation-delay: .3s; }
+.star:nth-child(11) { left: 73%; top: 62%; animation-delay: 1.4s; }
+.star:nth-child(12) { left: 90%; top: 72%; animation-delay: .8s; }
+.star:nth-child(13) { left: 45%; top: 76%; animation-delay: 2s; }
+.star:nth-child(14) { left: 57%; top: 58%; animation-delay: .6s; }
+.star:nth-child(15) { left: 6%; top: 82%; animation-delay: 1.1s; }
 
 @keyframes twinkle {
 
@@ -197,16 +112,13 @@ body {
 ============================== */
 
 .page {
-
   position: relative;
-
   z-index: 2;
 
   min-height: 100vh;
   min-height: 100dvh;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
@@ -214,11 +126,8 @@ body {
 }
 
 .card {
-
   width: 100%;
-
   max-width: 520px;
-
   text-align: center;
 }
 
@@ -228,11 +137,8 @@ body {
 ============================== */
 
 .coffee {
-
   font-size: 88px;
-
   line-height: 1;
-
   margin-bottom: 20px;
 
   filter:
@@ -248,18 +154,14 @@ body {
 @keyframes coffeeAppear {
 
   from {
-
     opacity: 0;
-
     transform:
       translateY(30px)
       scale(.7);
   }
 
   to {
-
     opacity: 1;
-
     transform:
       translateY(0)
       scale(1);
@@ -283,13 +185,9 @@ body {
 ============================== */
 
 .small {
-
   font-size: 17px;
-
   letter-spacing: 2px;
-
   opacity: .75;
-
   margin-bottom: 10px;
 
   animation:
@@ -297,16 +195,13 @@ body {
 }
 
 h1 {
-
   margin: 0;
 
   font-size:
     clamp(42px, 11vw, 60px);
 
   line-height: 1.05;
-
   font-weight: 700;
-
   letter-spacing: -1.5px;
 
   text-shadow:
@@ -318,16 +213,12 @@ h1 {
 }
 
 .subtitle {
-
   margin:
     18px auto 24px;
 
   font-size: 21px;
-
   line-height: 1.45;
-
   max-width: 430px;
-
   opacity: .94;
 
   animation:
@@ -335,11 +226,8 @@ h1 {
 }
 
 .question {
-
   font-size: 17px;
-
   margin-bottom: 18px;
-
   opacity: .85;
 
   animation:
@@ -349,17 +237,13 @@ h1 {
 @keyframes fadeUp {
 
   from {
-
     opacity: 0;
-
     transform:
       translateY(22px);
   }
 
   to {
-
     opacity: 1;
-
     transform:
       translateY(0);
   }
@@ -371,22 +255,16 @@ h1 {
 ============================== */
 
 .yes-no {
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   gap: 14px;
 
   margin:
     20px auto 25px;
 
   position: relative;
-
   min-height: 62px;
-
   z-index: 20;
 
   animation:
@@ -394,22 +272,18 @@ h1 {
 }
 
 .choice {
-
   border:
     1px solid
     rgba(255,255,255,.25);
 
   color: white;
-
   border-radius: 18px;
 
   padding:
     14px 30px;
 
   font-size: 18px;
-
   font-weight: 700;
-
   cursor: pointer;
 
   background:
@@ -427,13 +301,11 @@ h1 {
 }
 
 .choice:active {
-
   transform:
     scale(.92);
 }
 
 .yes:hover {
-
   background:
     rgba(255,255,255,.24);
 
@@ -445,7 +317,6 @@ h1 {
 /* NE DUGME */
 
 .no {
-
   position: relative;
 
   transition:
@@ -460,7 +331,6 @@ h1 {
 ============================== */
 
 .days {
-
   display: none;
 
   grid-template-columns:
@@ -469,7 +339,6 @@ h1 {
   gap: 12px;
 
   width: 100%;
-
   max-width: 440px;
 
   margin: 0 auto;
@@ -479,14 +348,12 @@ h1 {
 }
 
 .days.visible {
-
   display: grid;
 }
 
 @keyframes daysAppear {
 
   from {
-
     opacity: 0;
 
     transform:
@@ -495,7 +362,6 @@ h1 {
   }
 
   to {
-
     opacity: 1;
 
     transform:
@@ -505,7 +371,6 @@ h1 {
 }
 
 .day {
-
   border:
     1px solid
     rgba(255,255,255,.18);
@@ -521,7 +386,6 @@ h1 {
     16px 8px;
 
   font-size: 17px;
-
   font-weight: 600;
 
   box-shadow:
@@ -546,7 +410,6 @@ h1 {
 }
 
 .day:hover {
-
   background:
     rgba(255,255,255,.18);
 
@@ -555,13 +418,11 @@ h1 {
 }
 
 .day:active {
-
   transform:
     scale(.94);
 }
 
 .day.selected {
-
   background:
     rgba(255,255,255,.28);
 
@@ -579,13 +440,10 @@ h1 {
 ============================== */
 
 .no-message {
-
   min-height: 27px;
-
   margin-top: 4px;
 
   font-size: 15px;
-
   opacity: 0;
 
   transition:
@@ -595,7 +453,6 @@ h1 {
 }
 
 .no-message.show {
-
   opacity: .8;
 }
 
@@ -605,23 +462,19 @@ h1 {
 ============================== */
 
 .loading {
-
   display: none;
 
   margin-top: 22px;
 
   font-size: 16px;
-
   opacity: .75;
 }
 
 .loading.show {
-
   display: block;
 }
 
 .loader {
-
   display: inline-block;
 
   width: 18px;
@@ -658,7 +511,6 @@ h1 {
 ============================== */
 
 .result {
-
   display: none;
 
   animation:
@@ -666,14 +518,12 @@ h1 {
 }
 
 .result.show {
-
   display: block;
 }
 
 @keyframes resultAppear {
 
   from {
-
     opacity: 0;
 
     transform:
@@ -681,7 +531,6 @@ h1 {
   }
 
   to {
-
     opacity: 1;
 
     transform:
@@ -690,9 +539,7 @@ h1 {
 }
 
 .result-coffee {
-
   font-size: 90px;
-
   margin-bottom: 20px;
 
   animation:
@@ -703,7 +550,6 @@ h1 {
 @keyframes resultCoffee {
 
   0% {
-
     opacity: 0;
 
     transform:
@@ -712,13 +558,11 @@ h1 {
   }
 
   70% {
-
     transform:
       scale(1.15);
   }
 
   100% {
-
     opacity: 1;
 
     transform:
@@ -727,7 +571,6 @@ h1 {
 }
 
 .result h2 {
-
   margin: 0;
 
   font-size:
@@ -746,14 +589,12 @@ h1 {
 @keyframes glowText {
 
   from {
-
     text-shadow:
       0 0 8px
       rgba(255,255,255,.2);
   }
 
   to {
-
     text-shadow:
       0 0 28px
       rgba(255,255,255,.75),
@@ -764,16 +605,12 @@ h1 {
 }
 
 .result p {
-
   margin:
     20px auto 0;
 
   font-size: 22px;
-
   line-height: 1.45;
-
   max-width: 400px;
-
   opacity: .92;
 
   animation:
@@ -781,11 +618,9 @@ h1 {
 }
 
 .sparkles {
-
   margin-top: 34px;
 
   font-size: 30px;
-
   letter-spacing: 18px;
 
   animation:
@@ -796,7 +631,6 @@ h1 {
 @keyframes sparkleAppear {
 
   from {
-
     opacity: 0;
 
     transform:
@@ -804,7 +638,6 @@ h1 {
   }
 
   to {
-
     opacity: 1;
 
     transform:
@@ -815,7 +648,6 @@ h1 {
 @keyframes sparkleMove {
 
   0%, 100% {
-
     opacity: .55;
 
     transform:
@@ -823,7 +655,6 @@ h1 {
   }
 
   50% {
-
     opacity: 1;
 
     transform:
@@ -839,28 +670,23 @@ h1 {
 @media (max-width: 420px) {
 
   .page {
-
     padding:
       24px 16px;
   }
 
   .coffee {
-
     font-size: 74px;
   }
 
   .subtitle {
-
     font-size: 19px;
   }
 
   .question {
-
     font-size: 16px;
   }
 
   .choice {
-
     padding:
       13px 27px;
 
@@ -868,7 +694,6 @@ h1 {
   }
 
   .day {
-
     font-size: 15px;
 
     padding:
@@ -876,12 +701,10 @@ h1 {
   }
 
   .result-coffee {
-
     font-size: 78px;
   }
 
   .result p {
-
     font-size: 20px;
   }
 }
@@ -889,25 +712,20 @@ h1 {
 @media (max-height: 700px) {
 
   .coffee {
-
     font-size: 62px;
-
     margin-bottom: 10px;
   }
 
   .subtitle {
-
     margin:
       12px auto 18px;
   }
 
   .question {
-
     margin-bottom: 12px;
   }
 
   .day {
-
     padding:
       11px 7px;
   }
@@ -957,14 +775,10 @@ h1 {
 <section id="mainContent">
 
 
-  <!-- KAHVA -->
-
   <div class="coffee">
     ☕
   </div>
 
-
-  <!-- NASLOV -->
 
   <div class="small">
     nešto jednostavno 😊
@@ -976,14 +790,10 @@ h1 {
   </h1>
 
 
-  <!-- PITANJE -->
-
   <div class="subtitle">
     Hoćemo na kahvu sljedeće sedmice? ☕
   </div>
 
-
-  <!-- DA / NE -->
 
   <div class="yes-no">
 
@@ -1007,8 +817,6 @@ h1 {
   </div>
 
 
-  <!-- ŠALJIVA PORUKA -->
-
   <div
     id="noMessage"
     class="no-message">
@@ -1017,8 +825,6 @@ h1 {
 
   </div>
 
-
-  <!-- PITANJE ZA DANE -->
 
   <div
     id="dayQuestion"
@@ -1029,10 +835,6 @@ h1 {
 
   </div>
 
-
-  <!-- ==============================
-       DANI
-  ============================== -->
 
   <div
     class="days"
@@ -1122,8 +924,6 @@ h1 {
   </div>
 
 
-  <!-- LOADING -->
-
   <div
     class="loading"
     id="loading">
@@ -1138,10 +938,6 @@ h1 {
 </section>
 
 
-
-<!-- ==============================
-     ZAVRŠNI EKRAN
-============================== -->
 
 <section
   class="result"
@@ -1186,6 +982,97 @@ h1 {
 
 const FORM_ENDPOINT =
   "https://formsubmit.co/ajax/a66ce24f7a9cfbac556328b2810dadd5";
+
+
+/* ==================================
+   ANONIMNA OBAVIJEST O POSJETI
+   NAJVIŠE 1x U 24 SATA
+================================== */
+
+const VISIT_KEY =
+  "kahva_visit_notification";
+
+const LAST_VISIT =
+  localStorage.getItem(VISIT_KEY);
+
+const NOW =
+  Date.now();
+
+const TWENTY_FOUR_HOURS =
+  24 * 60 * 60 * 1000;
+
+
+if (
+  !LAST_VISIT ||
+  NOW - Number(LAST_VISIT) >= TWENTY_FOUR_HOURS
+) {
+
+  localStorage.setItem(
+    VISIT_KEY,
+    NOW.toString()
+  );
+
+  fetch(
+    FORM_ENDPOINT,
+    {
+
+      method: "POST",
+
+      headers: {
+        "Accept":
+          "application/json"
+      },
+
+      body: (() => {
+
+        const data =
+          new FormData();
+
+        data.append(
+          "poruka",
+          "👀 Nova anonimna posjeta stranici „Hoćemo na kahvu“ ☕"
+        );
+
+        data.append(
+          "_subject",
+          "👀 Nova posjeta — Hoćemo na kahvu"
+        );
+
+        data.append(
+          "_captcha",
+          "false"
+        );
+
+        data.append(
+          "_template",
+          "table"
+        );
+
+        return data;
+
+      })()
+
+    }
+  )
+
+  .then(() => {
+
+    console.log(
+      "Visit notification sent."
+    );
+
+  })
+
+  .catch(error => {
+
+    console.log(
+      "Visit notification error:",
+      error
+    );
+
+  });
+
+}
 
 
 /* ==================================
@@ -1263,12 +1150,8 @@ yesButton.addEventListener(
   "click",
   function() {
 
-
-    /* mala animacija */
-
     yesButton.style.transform =
       "scale(1.1)";
-
 
     setTimeout(() => {
 
@@ -1277,8 +1160,6 @@ yesButton.addEventListener(
 
     }, 250);
 
-
-    /* sakrij DA/NE */
 
     document
       .querySelector(".yes-no")
@@ -1291,13 +1172,9 @@ yesButton.addEventListener(
     );
 
 
-    /* pokaži pitanje */
-
     dayQuestion.style.display =
       "block";
 
-
-    /* pokaži dane */
 
     days.classList.add(
       "visible"
@@ -1313,14 +1190,8 @@ yesButton.addEventListener(
 
 function runAway() {
 
-
   noClicks++;
 
-
-  /*
-    Nakon nekoliko pokušaja
-    poruka postaje šaljiva.
-  */
 
   if (noClicks >= 3) {
 
@@ -1333,11 +1204,6 @@ function runAway() {
 
   }
 
-
-  /*
-    Dugme ne ide predaleko
-    da ostane na ekranu.
-  */
 
   const randomX =
     Math.floor(
@@ -1354,11 +1220,6 @@ function runAway() {
   noButton.style.transform =
     `translate(${randomX}px, ${randomY}px)`;
 
-
-  /*
-    Nakon još nekoliko pokušaja
-    postaje još smješnije.
-  */
 
   if (noClicks >= 5) {
 
@@ -1434,15 +1295,9 @@ noButton.addEventListener(
 dayButtons.forEach(
   button => {
 
-
     button.addEventListener(
       "click",
       async function() {
-
-
-        /* ==========================
-           PODACI
-        ========================== */
 
         const selectedDay =
           this.dataset.day;
@@ -1451,10 +1306,6 @@ dayButtons.forEach(
         const selectedCase =
           this.dataset.case;
 
-
-        /* ==========================
-           OZNAČI ODABRANI DAN
-        ========================== */
 
         dayButtons.forEach(
           btn => {
@@ -1475,21 +1326,12 @@ dayButtons.forEach(
         );
 
 
-        /* ==========================
-           LOADING
-        ========================== */
-
         loading.classList.add(
           "show"
         );
 
 
-        /* ==========================
-           MAIL TEBI
-        ========================== */
-
         try {
-
 
           const formData =
             new FormData();
@@ -1550,10 +1392,6 @@ dayButtons.forEach(
         }
 
 
-        /* ==========================
-           KRATKA PAUZA
-        ========================== */
-
         await new Promise(
           resolve =>
             setTimeout(
@@ -1563,18 +1401,10 @@ dayButtons.forEach(
         );
 
 
-        /* ==========================
-           SKLONI LOADING
-        ========================== */
-
         loading.classList.remove(
           "show"
         );
 
-
-        /* ==========================
-           ZAVRŠNI TEKST
-        ========================== */
 
         resultTitle.textContent =
           "Dogovoreno 😊";
@@ -1583,10 +1413,6 @@ dayButtons.forEach(
         resultText.textContent =
           `Vidimo se u ${selectedCase} ☕`;
 
-
-        /* ==========================
-           PRELAZ
-        ========================== */
 
         mainContent.style.display =
           "none";
